@@ -60,6 +60,7 @@
     } 
     else {
         if (now-setupTime > seconds){ 
+        localStorage.removeItem('setupTime')
         window.location.href="page2.html"
  }}
 
