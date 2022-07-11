@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Welcome!</title>
+<style>
+     .btn{
+    margin-left:10px;
+    margin-top:10px;
+    border:1.5px solid #000;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:5px;
+    background-color: yellow;
+    font-family: Consolas;
+    font-size: 30px;
+    line-height:30px;
+    text-align:center;
+    cursor:pointer;
+ }
+
+.btn:hover{
+  background-color: rgba(162, 180, 61,0.8);
+}
+
+
+</style>
+</head>
+<body>
+<script type="text/javascript" lang="javascript">
+
+    //logout
+    function logout(){
+        sessionStorage.clear()
+        localStorage.clear()
+        window.location.href="index.html"
+    }
+</script>
+<script type="text/javascript" lang="javascript">
+//login conditions check
+var usernameCheck = JSON.parse(window.localStorage.getItem('username'))
+var passwordCheck = JSON.parse(window.localStorage.getItem('password'))
+
+console.log(JSON.parse(window.localStorage.getItem('username')))
+console.log(JSON.parse(window.localStorage.getItem('password')))
+
+
+if (passwordCheck == null){
+    window.location.href="index.html"
+}
+
+else if (passwordCheck == undefined){
+    window.location.href="index.html"
+}
+
+else{
+  
+}
+
+</script>
+
+<button type="button" id="logout" class="btn" onclick="logout()">Logout</button>
+</body>
+</html>
