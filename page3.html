@@ -51,17 +51,7 @@
         window.location.href="page2.html"
     }
 
-    //timeout
-    var seconds = 300; // Reset when storage is more than 300s
-    var now = new Date().getTime();
-    var setupTime = localStorage.getItem('setupTime');
-    if (setupTime == null) { 
-        localStorage.setItem('setupTime', now)
-    } 
-    else {
-        if (now-setupTime > seconds){ 
-        localStorage.removeItem('setupTime')
-        window.location.href="page2.html"
+
  }}
 
 </script>
