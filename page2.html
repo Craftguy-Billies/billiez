@@ -25,15 +25,31 @@
   background-color: rgba(162, 180, 61,0.8);
 }
 
+#mbz{
+    background-color:rgb(200, 255, 220);
+}
+
+#mbz:hover{
+    background-color:rgb(98, 205, 137);
+}
+
 </style>
 </head>
 <body>
     <script type="text/javascript" lang="javascript">
+
+        //logout
         function logout(){
             sessionStorage.clear()
             localStorage.clear()
             window.location.href="index.html"
         }
+
+        //next page (mamber zone)
+        function nextpage(){
+            window.location.href="page3.html"
+        }
+
     </script>
 <script type="text/javascript" lang="javascript">
     //login conditions check
@@ -68,5 +84,6 @@
 </script>
 
 <button type="button" id="logout" class="btn" onclick="logout()">Logout</button>
+<button type="button" id="mbz" class="btn" onclick="nextpage()">Member Zone</button>
 </body>
 </html>
