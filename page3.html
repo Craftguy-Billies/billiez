@@ -25,6 +25,13 @@
   background-color: rgba(162, 180, 61,0.8);
 }
 
+#prevpage{
+    background-color: rgb(206, 198, 255);
+}
+
+#prevpage:hover{
+    background-color:blue;
+}
 
 </style>
 </head>
@@ -37,7 +44,14 @@
         localStorage.clear()
         window.location.href="index.html"
     }
+
+    //previous page
+    function prevpage(){
+        window.location.href="page2.html"
+    }
+
 </script>
+
 <script type="text/javascript" lang="javascript">
 //login conditions check
 var usernameCheck = JSON.parse(window.localStorage.getItem('username'))
@@ -57,7 +71,7 @@ else if (passwordCheck == undefined){
 
 else if (passwordCheck == 'guest'){
     alert('Please login with given username and password to access our member zone!')
-    window.location.href="index.html"
+    window.location.href="page2.html"
 }
 
 else{
@@ -67,5 +81,6 @@ else{
 </script>
 
 <button type="button" id="logout" class="btn" onclick="logout()">Logout</button>
+<button type="button" id="prevpage" class="btn" onclick="prevpage()">Previous Page</button>
 </body>
 </html>
