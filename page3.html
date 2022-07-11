@@ -37,33 +37,6 @@
 </style>
 </head>
 <body>
-<script type="text/javascript" lang="javascript">
-
-    //logout
-    function logout(){
-        sessionStorage.clear()
-        localStorage.clear()
-        window.location.href="index.html"
-    }
-
-    //previous page
-    function prevpage(){
-        window.location.href="page2.html"
-    }
-
-    //timeout
-    var seconds = 300; // Reset when storage is more than 300s
-    var now = new Date().getTime();
-    var setupTime = localStorage.getItem('setupTime');
-    if (setupTime == null) { 
-        localStorage.setItem('setupTime', now)
-    } 
-    else {
-        if (now-setupTime > seconds){ 
-        window.location.href="page2.html"
- }}
-
-</script>
 
 <script type="text/javascript" lang="javascript">
 //login conditions check
@@ -90,6 +63,33 @@ else if (passwordCheck == 'guest'){
 else{
   
 }
+
+</script>
+<script type="text/javascript" lang="javascript">
+
+    //logout
+    function logout(){
+        sessionStorage.clear()
+        localStorage.clear()
+        window.location.href="index.html"
+    }
+
+    //previous page
+    function prevpage(){
+        window.location.href="page2.html"
+    }
+
+    //timeout
+    var seconds = 300; // Reset when storage is more than 300s
+    var now = new Date().getTime();
+    var setupTime = localStorage.getItem('setupTime');
+    if (setupTime == null) { 
+        localStorage.setItem('setupTime', now)
+    } 
+    else {
+        if (now-setupTime > seconds){ 
+        window.location.href="page2.html"
+ }}
 
 </script>
 
