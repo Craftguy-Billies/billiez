@@ -6,6 +6,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Member Zone</title>
 <style>
+    body{
+        background-color: #fff;
+    }
+
+    @font-face{
+        font-family: Consolas;
+        src: url(font/Consolas.ttf);
+    }
+
      .btn{
     margin-left:10px;
     margin-top:10px;
@@ -34,6 +43,42 @@
     background-color:blue;
 }
 
+.mail{
+    margin-left:10px;
+    margin-top:10px;
+    height:20px;
+    border:1.3px solid #000;
+    border-radius:5px;
+    font-family: Consolas;
+    font-size:18px;
+    line-height:20px;
+}
+
+.mail:hover{
+    outline: 1.3px solid blue;
+}
+
+.mail:active{
+    outline: 1.3px solid blue;
+}
+
+#send{
+    background-color: rgb(252, 123, 123);
+}
+
+#send:hover{
+    background-color:rgb(228, 88, 88);
+}
+
+.texts{
+    color: #000;
+    font-family: Consolas;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top:10px;
+    text-decoration:underline;
+
+}
 </style>
 </head>
 <body>
@@ -55,6 +100,13 @@
     const timeout = setTimeout(redirect,150000)
     function redirect(){
         window.location.href="page2.html"
+}
+
+    //auto logout
+    const autoLogout = setTimeout(logout,21600000)
+    function logout(){
+        localStorage.clear()
+        window.location.href="index.html"
 }
 
 </script>
