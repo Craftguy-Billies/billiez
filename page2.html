@@ -47,9 +47,8 @@
 
         //logout
         function logout(){
-            sessionStorage.clear();
-            localStorage.clear();
-            window.location.reload();
+            sessionStorage.clear()
+            localStorage.clear()
             window.location.href="index.html"
         }
 
@@ -59,8 +58,8 @@
         }
 
         //auto logout
-        const autoLogout = setTimeout(logout,21600000)
-        function logout(){
+        const autoLogout = setTimeout(autologout,21600000)
+        function autologout(){
             localStorage.clear()
 }
     </script>
