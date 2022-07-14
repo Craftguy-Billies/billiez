@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="theme-color" content="green">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Registration Page</title>
+        <style>
+  body{
+    background-color: rgb(211, 255, 251);
+    margin:0;
+    padding:0;
+  }
+
+  @font-face{
+    font-family: Consolas;
+    src: url(font/Consolas.ttf);
+  }
+
+  .blank{
+    width:100%;
+    height: 8px;
+  }
+
+  .box{
+    margin-left:10px;
+    width:40vw;
+    border:1px solid #000;
+  }
+
+  form{
+    display:flex;
+  }
+
+ #user{
+    margin-top:10px;
+ }
+
+ .btn{
+    margin-left:10px;
+    margin-top:10px;
+    border:1.5px solid #000;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:5px;
+    background-color: aqua;
+    font-family: Consolas;
+    font-size: 30px;
+    line-height:30px;
+    text-align:center;
+    cursor:pointer;
+ }
+
+.btn:hover{
+  background-color: rgba(61, 71, 180, 0.8);
+}
+
+#clear{
+  background-color: rgb(209, 255, 233);
+}
+        </style>
+    </head>
+    <body>
+
+
+        <form>
+            <div style="color:#000;font-size:20px;font-family: Consolas;margin-left:10px;">Username:&nbsp;&nbsp;<input type="text" id="user" class="box" value="">
+            <div class="blank"></div>
+            <div>Password:&nbsp;&nbsp;<input type="text" id="pw" class="box" value=""></div></div>
+            </form>
+            <div style="color:#000;font-size:20px;font-family: Consolas;margin-left:10px;margin-top:10px;">Confirm Password:&nbsp;&nbsp;<input type="text" id="confirmpw" class="box" value=""></div></div>
+            <input type="button" class="btn" id="btn" onclick="btn()" value="Login">      
+
+
+
+    </body>
+</html>
