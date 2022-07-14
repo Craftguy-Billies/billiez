@@ -6,6 +6,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Welcome!</title>
 <style>
+
+ @font-face{
+    font-family: Consolas;
+    src:url(font/Consolas.ttf)
+}
+
  .btn{
     margin-left:10px;
     margin-top:10px;
@@ -52,8 +58,8 @@
         }
 
         //auto logout
-        const autoLogout = setTimeout(logout,21600000)
-        function logout(){
+        const autoLogout = setTimeout(autologout,21600000)
+        function autologout(){
             localStorage.clear()
 }
     </script>
