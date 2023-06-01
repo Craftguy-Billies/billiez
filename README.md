@@ -1,4 +1,2 @@
-<input type="button" value="Commaification!">
-
-<div id="display"></div>
+<div id="display">Hi mtfker</div>
 
