@@ -1,3 +1,3 @@
-<div id="display">Hi mtfker</div>
-<input type="range">
+<div id="display" style="background-color:yellow">Hi mtfker</div>
+
 
